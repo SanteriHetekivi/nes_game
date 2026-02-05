@@ -1,0 +1,6 @@
+.include "macros.asm"
+.include "header.asm"
+.include "zp.asm"
+.include "code.asm"
+.include "vectors.asm"
+.include "tiles.asm"
