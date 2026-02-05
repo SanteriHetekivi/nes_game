@@ -1,7 +1,7 @@
 .segment "HEADER"
     .byte $4E, $45, $53, $1A    ; ASCII "NES<SUB>"
-    .byte $01                   ; 1 PRG bank (16KB)
-    .byte $01                   ; 1 CHR bank (8KB)
+    .byte %00000001             ; 1 PRG bank (16KB)
+    .byte %00000001             ; 1 CHR bank (8KB)
     ; Flags 6 (Mapper, mirroring, battery, trainer)
     .byte %00000001             ; 0: Nametable arrangement. (1 = vertically mirrored)
                                 ; 1: Is there battery-backed PRG RAM? (0 = no)

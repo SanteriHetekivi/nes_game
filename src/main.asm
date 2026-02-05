@@ -1,3 +1,4 @@
+.include "registers.asm"
 .include "macros.asm"
 .include "header.asm"
 .include "zp.asm"

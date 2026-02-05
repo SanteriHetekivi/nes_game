@@ -4,7 +4,7 @@
 
 ; Wait for the start of vertical blanking (vblank) period.
 vblankwait:
-    BIT $2002       ; If bit 7 of picture processing unit (PPU) status register ($2002) is not clear, we're still in vblank.
+    BIT PPU_STATUS  ; If bit 7 of picture processing unit (PPU_) status register is not clear, we're still in vblank.
     BPL vblankwait  ; Wait until it's set.
 
     ; Run game logic inside the vblank period.
