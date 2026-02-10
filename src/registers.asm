@@ -7,6 +7,7 @@ PPU_ADDR             = $2006 ; PPU Address.
 PPU_DATA             = $2007 ; PPU Data.
 ; PPU_OAM_(Object Attribute Memory) registers:
 PPU_OAM_ADDR         = $2003 ; OAM Address
+PPU_OAM_BUFFER       = $0200 ; OAM buffer in RAM (not a real register, but used for DMA).
 PPU_OAM_DATA         = $2004 ; OAM Data.
 PPU_OAM_DMA          = $4014 ; OAM Direct memory access.
 
